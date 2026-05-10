@@ -1,3 +1,3 @@
-module log_analyzer_0f5eca
+module log_analyzer_cd878b
 
 go 1.21

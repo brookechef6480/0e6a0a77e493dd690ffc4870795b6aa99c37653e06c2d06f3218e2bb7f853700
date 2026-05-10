@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	appName = "log-analyzer-0f5eca"
+	appName = "log-analyzer-cd878b"
 	version = "1.6.0"
 )
 
